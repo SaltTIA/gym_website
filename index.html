@@ -84,7 +84,7 @@ body{
   background:var(--paper);
   color:var(--ink);
   font-family:var(--font-sans);
-  font-size:16px;
+  font-size:24px;
   line-height:1.8;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
@@ -111,7 +111,7 @@ mark{background:var(--accent-soft);color:var(--ink);padding:0 .15em;border-radiu
 }
 .article-prose{
   font-family:var(--font-serif);
-  font-size:17px;
+  font-size:25px;
   line-height:1.95;
   color:var(--ink-body);
   text-align:justify;
@@ -147,14 +147,14 @@ mark{background:var(--accent-soft);color:var(--ink);padding:0 .15em;border-radiu
 #main-nav.scrolled{border-bottom-color:var(--line)}
 .nav-inner{max-width:var(--container);margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .site-name{
-  font-family:var(--font-serif);font-size:19px;font-weight:600;letter-spacing:.04em;
+  font-family:var(--font-serif);font-size:27px;font-weight:600;letter-spacing:.04em;
   cursor:pointer;white-space:nowrap;line-height:1;padding:6px 0;
   transition:color .2s;
 }
 .site-name:hover{color:var(--ink-2)}
 .nav-links{display:flex;align-items:center;gap:2px}
 .nav-links a{
-  font-size:12px;letter-spacing:.14em;color:var(--muted);
+  font-size:20px;letter-spacing:.14em;color:var(--muted);
   padding:8px 11px;border-radius:var(--r-xs);
   transition:color .2s,background .2s;white-space:nowrap;
 }
@@ -165,7 +165,7 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 .theme-toggle{
   width:34px;height:34px;display:grid;place-items:center;
   border:1px solid var(--line);border-radius:50%;background:transparent;
-  color:var(--muted);cursor:pointer;font-family:var(--font-mono);font-size:11px;
+  color:var(--muted);cursor:pointer;font-family:var(--font-mono);font-size:19px;
   transition:color .2s,border-color .2s,transform .25s var(--ease-soft);
 }
 .theme-toggle:hover{color:var(--ink);border-color:var(--line-strong);transform:rotate(-12deg)}
@@ -189,80 +189,80 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 .nav-drawer-inner li{border-bottom:1px solid var(--line-subtle)}
 .nav-drawer-inner a{
   display:flex;align-items:baseline;justify-content:space-between;
-  font-family:var(--font-serif);font-size:22px;color:var(--ink);padding:18px 0;
+  font-family:var(--font-serif);font-size:30px;color:var(--ink);padding:18px 0;
   transition:color .2s,padding-left .2s;
 }
-.nav-drawer-inner a::after{content:'→';font-family:var(--font-mono);font-size:12px;color:var(--muted);opacity:0;transition:opacity .2s}
+.nav-drawer-inner a::after{content:'→';font-family:var(--font-mono);font-size:20px;color:var(--muted);opacity:0;transition:opacity .2s}
 .nav-drawer-inner a:hover,.nav-drawer-inner a.nav-active{padding-left:6px;color:var(--accent)}
 .nav-drawer-inner a:hover::after,.nav-drawer-inner a.nav-active::after{opacity:1}
 
 /* ---------- page head / kicker ---------- */
 .kicker{
-  font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;
+  font-family:var(--font-mono);font-size:19px;letter-spacing:.2em;
   color:var(--muted);text-transform:uppercase;line-height:1.6;
 }
 .page-head{padding:80px 24px 44px;max-width:var(--container);margin:0 auto;text-align:center}
 .page-head .kicker{margin-bottom:18px}
 .page-title{
   font-family:var(--font-serif);font-weight:600;
-  font-size:clamp(30px,4.6vw,44px);line-height:1.35;letter-spacing:.01em;
+  font-size:clamp(38px,4.6vw,52px);line-height:1.35;letter-spacing:.01em;
   margin-bottom:18px;
 }
 .page-title em{font-family:var(--font-display);font-style:italic;font-weight:400}
-.page-lede{font-family:var(--font-serif);font-size:16px;line-height:1.9;color:var(--muted);max-width:32em;margin:0 auto}
+.page-lede{font-family:var(--font-serif);font-size:24px;line-height:1.9;color:var(--muted);max-width:32em;margin:0 auto}
 .page-head::after{content:'';display:block;width:44px;height:1px;background:var(--line-strong);margin:34px auto 0}
 
 /* ---------- home hero ---------- */
 .hero{max-width:var(--container);margin:0 auto;padding:clamp(64px,10vw,104px) 24px clamp(52px,7vw,72px)}
-.hero-intro{font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;color:var(--muted);margin-bottom:26px}
+.hero-intro{font-family:var(--font-mono);font-size:19px;letter-spacing:.2em;color:var(--muted);margin-bottom:26px}
 .hero-title{
   font-family:var(--font-serif);font-weight:600;
-  font-size:clamp(36px,6.2vw,58px);line-height:1.3;letter-spacing:.01em;
+  font-size:clamp(44px,6.2vw,66px);line-height:1.3;letter-spacing:.01em;
   margin-bottom:26px;
 }
 .hero-title em{font-family:var(--font-display);font-style:italic;font-weight:400;color:var(--accent)}
 .hero-body{
-  font-family:var(--font-serif);font-size:17px;line-height:1.95;color:var(--ink-body);
+  font-family:var(--font-serif);font-size:25px;line-height:1.95;color:var(--ink-body);
   max-width:30em;margin-bottom:44px;
 }
 .hero-meta{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
 .meta-item{padding:0 34px;border-left:1px solid var(--line-subtle);text-align:left}
 .meta-item:first-child{padding-left:0;border-left:none}
-.meta-num{font-family:var(--font-serif);font-size:26px;line-height:1.2;color:var(--ink)}
-.meta-label{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;color:var(--muted);margin-top:6px}
+.meta-num{font-family:var(--font-serif);font-size:34px;line-height:1.2;color:var(--ink)}
+.meta-label{font-family:var(--font-mono);font-size:18px;letter-spacing:.16em;color:var(--muted);margin-top:6px}
 
 /* ---------- section labels ---------- */
 .section{position:relative}
 .section-label{
   display:flex;align-items:center;justify-content:center;gap:18px;
   margin:0 auto 36px;text-align:center;
-  font-family:var(--font-serif);font-size:20px;font-weight:600;letter-spacing:.04em;
+  font-family:var(--font-serif);font-size:28px;font-weight:600;letter-spacing:.04em;
   color:var(--ink);line-height:1.5;
 }
 .section-label::before,.section-label::after{
-  content:'✦';font-family:var(--font-mono);font-size:10px;color:var(--accent);opacity:.7;letter-spacing:0;
+  content:'✦';font-family:var(--font-mono);font-size:18px;color:var(--accent);opacity:.7;letter-spacing:0;
 }
 .article-page .section-label{
-  margin:56px auto 22px;font-size:21px;
+  margin:56px auto 22px;font-size:29px;
 }
 .section-label:first-child{margin-top:0}
 
 /* ---------- links & inline components ---------- */
-.inline-error{font-size:12.5px;color:var(--ink);font-family:var(--font-sans);padding:9px 13px;background:var(--accent-soft);border-left:2px solid var(--accent);margin-top:10px;display:none;line-height:1.7}
+.inline-error{font-size:20.5px;color:var(--ink);font-family:var(--font-sans);padding:9px 13px;background:var(--accent-soft);border-left:2px solid var(--accent);margin-top:10px;display:none;line-height:1.7}
 .inline-error.show{display:block}
-.no-results{font-family:var(--font-serif);font-size:15px;color:var(--muted);padding:32px 0;text-align:center}
+.no-results{font-family:var(--font-serif);font-size:23px;color:var(--muted);padding:32px 0;text-align:center}
 .sci-badge{
   display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;color:var(--muted);
+  font-family:var(--font-mono);font-size:18px;letter-spacing:.16em;color:var(--muted);
   border:1px solid var(--line);border-radius:var(--r-xs);padding:4px 9px;margin-bottom:18px;
 }
 .muscle-pills{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 4px}
 .muscle-pill{
-  font-family:var(--font-sans);font-size:11.5px;letter-spacing:.02em;
+  font-family:var(--font-sans);font-size:19.5px;letter-spacing:.02em;
   padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink-3);
 }
 .pull-quote{
-  font-family:var(--font-serif);font-size:20px;line-height:1.75;color:var(--ink);
+  font-family:var(--font-serif);font-size:28px;line-height:1.75;color:var(--ink);
   text-align:center;padding:30px 8px;margin:32px auto;max-width:32em;
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
@@ -278,16 +278,16 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 }
 .knowledge-card:hover{border-color:var(--line)}
 .kc-title{
-  font-family:var(--font-serif);font-size:19px;font-weight:600;line-height:1.55;
+  font-family:var(--font-serif);font-size:27px;font-weight:600;line-height:1.55;
   color:var(--ink);margin-bottom:16px;letter-spacing:.01em;
 }
-.kc-body{font-size:16px;line-height:1.9;color:var(--ink-body)}
+.kc-body{font-size:24px;line-height:1.9;color:var(--ink-body)}
 .kc-body p{margin-bottom:12px}
 .kc-body p:last-child{margin-bottom:0}
 .kc-body strong{font-weight:600;color:var(--ink)}
-.kc-body .article-prose{font-size:16.5px;margin-bottom:12px}
+.kc-body .article-prose{font-size:24.5px;margin-bottom:12px}
 .kc-source{
-  font-family:var(--font-mono);font-size:10.5px;line-height:1.9;color:var(--muted-light);
+  font-family:var(--font-mono);font-size:18.5px;line-height:1.9;color:var(--muted-light);
   margin-top:18px;padding-top:14px;border-top:1px solid var(--line-subtle);
 }
 .kc-source a{color:var(--muted);text-decoration:underline;text-decoration-thickness:.5px;text-underline-offset:.2em}
@@ -295,10 +295,10 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 
 .tip-row{display:flex;gap:16px;margin-bottom:14px;align-items:flex-start}
 .tip-num{
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;color:var(--accent);
-  min-width:34px;margin-top:5px;line-height:1.5;
+  font-family:var(--font-mono);font-size:18.5px;letter-spacing:.06em;color:var(--accent);
+  min-width:46px;margin-top:5px;line-height:1.5;
 }
-.tip-text{font-family:var(--font-serif);font-size:16px;line-height:1.9;color:var(--ink-body);font-weight:400}
+.tip-text{font-family:var(--font-serif);font-size:24px;line-height:1.9;color:var(--ink-body);font-weight:400}
 .tip-text strong{font-weight:600;color:var(--ink)}
 
 /* ---------- callouts ---------- */
@@ -308,20 +308,22 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
   padding:20px 24px;margin-top:20px;
 }
 .warn-title,.info-title{
-  font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;color:var(--accent);
+  font-family:var(--font-mono);font-size:18px;letter-spacing:.2em;color:var(--accent);
   margin-bottom:10px;font-weight:400;text-transform:uppercase;
 }
-.warn-body,.info-body{font-family:var(--font-serif);font-size:15.5px;line-height:1.9;color:var(--ink-body)}
+.warn-body,.info-body{font-family:var(--font-serif);font-size:23.5px;line-height:1.9;color:var(--ink-body)}
 .warn-body a,.info-body a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-underline-offset:.2em}
 
 /* ---------- tables ---------- */
-.protein-table{width:100%;border-collapse:collapse;margin:20px 0 4px;font-size:14.5px}
+.table-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-scroll>.protein-table{max-width:42em;margin-left:auto;margin-right:auto}
+.protein-table{width:100%;border-collapse:collapse;margin:20px 0 4px;font-size:22.5px}
 .protein-table th{
-  font-family:var(--font-mono);font-size:10px;font-weight:400;letter-spacing:.14em;color:var(--muted);
+  font-family:var(--font-mono);font-size:18px;font-weight:400;letter-spacing:.14em;color:var(--muted);
   text-align:left;padding:12px 10px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line-strong);
 }
 .protein-table td{
-  font-family:var(--font-serif);font-size:14.5px;color:var(--ink-body);
+  font-family:var(--font-serif);font-size:22.5px;color:var(--ink-body);
   padding:12px 10px;border-bottom:1px solid var(--line-subtle);line-height:1.7;
 }
 .protein-table tr:last-child td{border-bottom:1px solid var(--line-strong)}
@@ -333,16 +335,16 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 .article-head .kicker{margin-bottom:20px}
 .article-title{
   font-family:var(--font-serif);font-weight:600;
-  font-size:clamp(27px,4.4vw,40px);line-height:1.4;letter-spacing:.01em;
+  font-size:clamp(35px,4.4vw,48px);line-height:1.4;letter-spacing:.01em;
   color:var(--ink);margin-bottom:22px;
 }
 .article-lede{
-  font-family:var(--font-serif);font-size:17px;line-height:1.95;color:var(--muted);
+  font-family:var(--font-serif);font-size:25px;line-height:1.95;color:var(--muted);
   max-width:30em;margin:0 auto 26px;
 }
 .article-meta{
   display:flex;justify-content:center;flex-wrap:wrap;gap:10px 18px;
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;color:var(--muted-light);
+  font-family:var(--font-mono);font-size:18.5px;letter-spacing:.12em;color:var(--muted-light);
   padding:16px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);
   margin-top:26px;
 }
@@ -353,16 +355,16 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
   padding:22px 26px;
 }
 .article-toc[hidden]{display:none}
-.toc-title{font-family:var(--font-mono);font-size:10px;letter-spacing:.2em;color:var(--muted);margin-bottom:12px}
+.toc-title{font-family:var(--font-mono);font-size:18px;letter-spacing:.2em;color:var(--muted);margin-bottom:12px}
 .toc-list{display:grid;grid-template-columns:1fr 1fr;gap:2px 26px}
 .toc-list a{
-  display:flex;gap:10px;align-items:baseline;font-family:var(--font-sans);font-size:13px;
+  display:flex;gap:10px;align-items:baseline;font-family:var(--font-sans);font-size:21px;
   color:var(--ink-3);padding:5px 0;border-bottom:1px solid transparent;
 }
 .toc-list a:hover{color:var(--accent)}
-.toc-list .toc-index{font-family:var(--font-mono);font-size:10px;color:var(--muted-light);min-width:18px}
+.toc-list .toc-index{font-family:var(--font-mono);font-size:18px;color:var(--muted-light);min-width:26px}
 .article-back{display:inline-flex;align-items:center;gap:9px;margin-top:40px;
-  font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--muted);
+  font-family:var(--font-mono);font-size:19px;letter-spacing:.12em;color:var(--muted);
   border-bottom:1px solid var(--line);padding-bottom:4px;cursor:pointer;transition:color .2s,border-color .2s}
 .article-back:hover{color:var(--accent);border-color:var(--accent)}
 .article-tags{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:26px 0 0}
@@ -377,7 +379,7 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
   position:fixed;right:26px;bottom:28px;z-index:80;
   width:40px;height:40px;display:grid;place-items:center;
   background:var(--paper);border:1px solid var(--line);border-radius:50%;
-  color:var(--ink);font-family:var(--font-mono);font-size:12px;cursor:pointer;
+  color:var(--ink);font-family:var(--font-mono);font-size:20px;cursor:pointer;
   opacity:0;visibility:hidden;transform:translateY(8px);
   transition:opacity .3s,visibility .3s,transform .3s var(--ease-soft),border-color .2s;
 }
@@ -387,22 +389,22 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 /* ---------- post list ---------- */
 .post-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
 .post-item{
-  display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;
+  display:grid;grid-template-columns:110px 1fr auto;gap:18px;align-items:baseline;
   padding:20px 4px;border-bottom:1px solid var(--line-subtle);cursor:pointer;
   transition:background .2s,padding-left .25s var(--ease-soft);
 }
 .post-item:hover{background:var(--wash);padding-left:10px}
 .post-left{display:contents}
 .post-tag{
-  font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;color:var(--muted);
+  font-family:var(--font-mono);font-size:18px;letter-spacing:.12em;color:var(--muted);
   white-space:nowrap;order:1;
 }
 .post-title{
-  font-family:var(--font-serif);font-size:17px;font-weight:500;line-height:1.6;color:var(--ink);
+  font-family:var(--font-serif);font-size:25px;font-weight:500;line-height:1.6;color:var(--ink);
   order:2;
 }
 .post-item:hover .post-title{color:var(--accent)}
-.post-date{font-family:var(--font-mono);font-size:10.5px;color:var(--muted-light);order:3;white-space:nowrap;font-variant-numeric:tabular-nums}
+.post-date{font-family:var(--font-mono);font-size:18.5px;color:var(--muted-light);order:3;white-space:nowrap;font-variant-numeric:tabular-nums}
 .post-item.hidden{display:none}
 
 /* search & filters */
@@ -410,15 +412,15 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 .search-input{
   width:100%;padding:15px 18px 15px 44px;
   background:var(--paper-card);border:1px solid var(--line);border-radius:var(--r-xs);
-  font-family:var(--font-sans);font-size:14px;color:var(--ink);outline:none;
+  font-family:var(--font-sans);font-size:22px;color:var(--ink);outline:none;
   transition:border-color .2s,background .2s;
 }
 .search-input::placeholder{color:var(--muted-light)}
 .search-input:focus{border-color:var(--ink);background:var(--paper)}
-.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:14px;pointer-events:none;font-family:var(--font-mono)}
+.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:22px;pointer-events:none;font-family:var(--font-mono)}
 .tag-filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:28px}
 .filter-tag{
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;padding:6px 12px;
+  font-family:var(--font-mono);font-size:18.5px;letter-spacing:.1em;padding:6px 12px;
   border:1px solid var(--line);border-radius:999px;color:var(--muted);cursor:pointer;
   transition:all .2s;background:transparent;
 }
@@ -432,7 +434,7 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 }
 .tabs::-webkit-scrollbar{display:none}
 .tab{
-  font-family:var(--font-sans);font-size:13.5px;letter-spacing:.03em;
+  font-family:var(--font-sans);font-size:21.5px;letter-spacing:.03em;
   padding:11px 16px 12px;color:var(--muted);cursor:pointer;white-space:nowrap;flex-shrink:0;
   border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .2s,border-color .2s;
 }
@@ -444,8 +446,8 @@ html[data-theme="midnight"] .nav-links a.nav-active{background:var(--paper-deep)
 /* ---------- schedule grid ---------- */
 .schedule-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:6px 0 20px}
 .day-box{border:1px solid var(--line);border-radius:var(--r-xs);padding:14px 7px;text-align:center;background:var(--paper-card)}
-.day-name{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;color:var(--muted-light);margin-bottom:7px}
-.day-content{font-family:var(--font-sans);font-size:11.5px;line-height:1.55;color:var(--ink);font-weight:500}
+.day-name{font-family:var(--font-mono);font-size:18px;letter-spacing:.1em;color:var(--muted-light);margin-bottom:7px}
+.day-content{font-family:var(--font-sans);font-size:19.5px;line-height:1.55;color:var(--ink);font-weight:500}
 .day-box.rest{background:transparent;border-style:dashed}
 .day-box.rest .day-content{color:var(--muted);font-weight:400}
 .day-box.active{background:var(--accent-soft);border-color:var(--line-strong)}
@@ -460,23 +462,23 @@ html[data-theme="midnight"] .day-box.active{background:var(--paper-deep)}
   padding:26px 28px;margin-bottom:22px;
 }
 .pitfall-tag{
-  display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;
+  display:inline-block;font-family:var(--font-mono);font-size:18px;letter-spacing:.14em;
   color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 9px;margin-bottom:12px;
 }
-.pitfall-num{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;color:var(--accent);margin-bottom:8px}
-.pitfall-title{font-family:var(--font-serif);font-size:19px;font-weight:600;line-height:1.55;color:var(--ink);margin-bottom:12px}
-.pitfall-body{font-family:var(--font-serif);font-size:15.5px;line-height:1.9;color:var(--ink-body)}
+.pitfall-num{font-family:var(--font-mono);font-size:18px;letter-spacing:.18em;color:var(--accent);margin-bottom:8px}
+.pitfall-title{font-family:var(--font-serif);font-size:27px;font-weight:600;line-height:1.55;color:var(--ink);margin-bottom:12px}
+.pitfall-body{font-family:var(--font-serif);font-size:23.5px;line-height:1.9;color:var(--ink-body)}
 .pitfall-body strong{font-weight:600;color:var(--ink)}
 .pitfall-lesson{
-  font-family:var(--font-serif);font-size:14.5px;line-height:1.85;color:var(--ink-2);
+  font-family:var(--font-serif);font-size:22.5px;line-height:1.85;color:var(--ink-2);
   background:var(--paper-soft);padding:14px 18px;margin-top:18px;border-radius:var(--r-xs);
 }
-.pitfall-lesson::before{content:'學到的事';display:block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.2em;color:var(--accent);margin-bottom:6px}
+.pitfall-lesson::before{content:'學到的事';display:block;font-family:var(--font-mono);font-size:17.5px;letter-spacing:.2em;color:var(--accent);margin-bottom:6px}
 
 /* ---------- resources ---------- */
 .resource-group-title{
   display:flex;align-items:center;gap:14px;
-  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.22em;color:var(--muted);
+  font-family:var(--font-mono);font-size:18.5px;letter-spacing:.22em;color:var(--muted);
   margin:44px 0 18px;text-transform:uppercase;
 }
 .resource-group-title:first-child{margin-top:0}
@@ -485,15 +487,15 @@ html[data-theme="midnight"] .day-box.active{background:var(--paper-deep)}
 .resource-item:last-child{border-bottom:1px solid var(--line-subtle)}
 .resource-icon{display:none}
 .resource-info{flex:1}
-.resource-name{font-family:var(--font-serif);font-size:17px;font-weight:600;color:var(--ink);line-height:1.55;margin-bottom:6px}
+.resource-name{font-family:var(--font-serif);font-size:25px;font-weight:600;color:var(--ink);line-height:1.55;margin-bottom:6px}
 .resource-name a{text-decoration:underline;text-decoration-thickness:.5px;text-underline-offset:.22em;text-decoration-color:var(--line-strong)}
 .resource-name a:hover{text-decoration-color:var(--ink)}
 .resource-badge{
-  display:inline-block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;
+  display:inline-block;font-family:var(--font-mono);font-size:17.5px;letter-spacing:.12em;
   border:1px solid var(--line);border-radius:2px;padding:2px 7px;margin-left:8px;
   color:var(--muted);vertical-align:middle;
 }
-.resource-desc{font-family:var(--font-serif);font-size:14.5px;line-height:1.85;color:var(--ink-body)}
+.resource-desc{font-family:var(--font-serif);font-size:22.5px;line-height:1.85;color:var(--ink-body)}
 
 /* ---------- videos ---------- */
 .video-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -513,24 +515,24 @@ html[data-theme="midnight"] .day-box.active{background:var(--paper-deep)}
   color:var(--muted);
 }
 html[data-theme="midnight"] .video-thumb-fallback{background:repeating-linear-gradient(45deg,transparent 0 7px,rgba(236,226,207,.05) 7px 8px),var(--paper-deep)}
-.video-thumb-fallback .vt-mark{font-family:var(--font-serif);font-size:22px;color:var(--ink);letter-spacing:.06em}
-.video-thumb-fallback .vt-id{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em;color:var(--muted-light)}
+.video-thumb-fallback .vt-mark{font-family:var(--font-serif);font-size:30px;color:var(--ink);letter-spacing:.06em}
+.video-thumb-fallback .vt-id{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.08em;color:var(--muted-light)}
 .video-play-btn{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:opacity .2s}
 .video-card:hover .video-play-btn{opacity:1}
 .video-play-icon{width:44px;height:44px;border:1px solid var(--line-strong);border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--paper) 70%,transparent)}
 .video-play-icon::after{content:'';width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:9px solid var(--ink);margin-left:2px}
-.video-source-badge{position:absolute;top:10px;left:10px;font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;background:var(--ink);color:var(--accent-on);padding:3px 7px;border-radius:2px}
+.video-source-badge{position:absolute;top:10px;left:10px;font-family:var(--font-mono);font-size:17px;letter-spacing:.12em;background:var(--ink);color:var(--accent-on);padding:3px 7px;border-radius:2px}
 .video-info{padding:16px 18px 18px}
-.video-tag{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px}
-.video-title{font-family:var(--font-serif);font-size:16px;font-weight:600;line-height:1.6;color:var(--ink);margin-bottom:6px}
-.video-author{font-family:var(--font-mono);font-size:10px;color:var(--muted-light);letter-spacing:.06em}
+.video-tag{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px}
+.video-title{font-family:var(--font-serif);font-size:24px;font-weight:600;line-height:1.6;color:var(--ink);margin-bottom:6px}
+.video-author{font-family:var(--font-mono);font-size:18px;color:var(--muted-light);letter-spacing:.06em}
 
 /* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start}
-.about-text{font-family:var(--font-serif);font-size:16px;line-height:2;color:var(--ink-body)}
+.about-text{font-family:var(--font-serif);font-size:24px;line-height:2;color:var(--ink-body)}
 .about-text p+p{margin-top:16px}
 .tag-cloud{display:flex;flex-wrap:wrap;gap:8px}
-.tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink-3);transition:all .2s}
+.tag{font-family:var(--font-mono);font-size:18.5px;letter-spacing:.1em;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink-3);transition:all .2s}
 .tag:hover{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
 
 /* ---------- tools ---------- */
@@ -542,7 +544,7 @@ html[data-theme="midnight"] .video-thumb-fallback{background:repeating-linear-gr
 }
 .tools-subnav::-webkit-scrollbar{display:none}
 .tools-tab{
-  font-family:var(--font-sans);font-size:13px;letter-spacing:.03em;
+  font-family:var(--font-sans);font-size:21px;letter-spacing:.03em;
   background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;
   padding:14px 15px;color:var(--muted);cursor:pointer;white-space:nowrap;flex-shrink:0;
   transition:color .2s,border-color .2s;
@@ -557,87 +559,87 @@ html[data-theme="midnight"] .video-thumb-fallback{background:repeating-linear-gr
   padding:clamp(22px,3vw,30px);margin-bottom:18px;
 }
 .calc-row{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;margin-bottom:18px}
-.calc-field{display:flex;flex-direction:column;gap:7px;flex:1;min-width:110px}
-.calc-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.calc-field{display:flex;flex-direction:column;gap:7px;flex:1;min-width:130px}
+.calc-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
 .calc-input,.calc-select{
   width:100%;padding:11px 13px;background:var(--paper);border:1px solid var(--line);
-  border-radius:var(--r-xs);font-family:var(--font-mono);font-size:13.5px;color:var(--ink);
+  border-radius:var(--r-xs);font-family:var(--font-mono);font-size:21.5px;color:var(--ink);
   outline:none;transition:border-color .2s,background .2s;
 }
-.calc-select{font-family:var(--font-sans);font-size:13px}
+.calc-select{font-family:var(--font-sans);font-size:21px}
 .calc-input:focus,.calc-select:focus{border-color:var(--ink)}
 .calc-btn{
   padding:11px 22px;background:var(--accent);color:var(--accent-on);border:1px solid var(--accent);
-  border-radius:var(--r-xs);font-family:var(--font-sans);font-size:12.5px;letter-spacing:.06em;
+  border-radius:var(--r-xs);font-family:var(--font-sans);font-size:20.5px;letter-spacing:.06em;
   cursor:pointer;white-space:nowrap;transition:opacity .2s,transform .15s;
 }
 .calc-btn:hover{opacity:.86}
 .calc-btn:active{transform:translateY(1px)}
 .calc-result{display:none;background:var(--paper-soft);border-radius:var(--r-xs);padding:22px;margin-top:6px}
 .calc-result.show{display:block;animation:fadeIn .35s var(--ease-soft) both}
-.calc-result-title{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;color:var(--muted);margin-bottom:16px;text-transform:uppercase}
+.calc-result-title{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.16em;color:var(--muted);margin-bottom:16px;text-transform:uppercase}
 .calc-bars{display:flex;flex-direction:column;gap:12px}
 .calc-bar-row{display:flex;align-items:center;gap:12px}
-.calc-bar-label{font-family:var(--font-sans);font-size:12px;color:var(--ink-3);min-width:72px}
+.calc-bar-label{font-family:var(--font-sans);font-size:20px;color:var(--ink-3);min-width:96px}
 .calc-bar-track{flex:1;height:4px;background:var(--paper-deep);border-radius:999px;overflow:hidden}
 .calc-bar-fill{height:100%;background:var(--accent);border-radius:999px;transition:width .45s var(--ease-soft)}
-.calc-bar-val{font-family:var(--font-mono);font-size:12px;color:var(--ink);min-width:70px;text-align:right;font-variant-numeric:tabular-nums}
-.calc-note{font-family:var(--font-serif);font-size:14px;line-height:1.85;color:var(--ink-body);margin-top:18px}
+.calc-bar-val{font-family:var(--font-mono);font-size:20px;color:var(--ink);min-width:96px;text-align:right;font-variant-numeric:tabular-nums}
+.calc-note{font-family:var(--font-serif);font-size:22px;line-height:1.85;color:var(--ink-body);margin-top:18px}
 .calc-range{width:100%;accent-color:var(--accent);cursor:pointer;height:4px;margin-top:10px}
 
 /* SFR */
-#sfr-verdict{font-family:var(--font-serif);font-size:14px;line-height:1.75;padding:13px 16px;border-radius:var(--r-xs);border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+#sfr-verdict{font-family:var(--font-serif);font-size:22px;line-height:1.75;padding:13px 16px;border-radius:var(--r-xs);border:1px solid var(--line);background:var(--paper);color:var(--ink)}
 .sfr-verdict-good{background:var(--accent-soft);border-color:var(--accent-soft);color:var(--ink)}
 .sfr-verdict-warn{background:var(--accent-soft);border-color:var(--accent-soft);color:var(--ink)}
 .sfr-verdict-bad{background:transparent;border-color:var(--line-strong);color:var(--ink-2)}
-#sfr-detail{font-family:var(--font-serif);font-size:14px;line-height:1.85;color:var(--ink-3);margin-top:14px}
-#sfr-detail strong{font-family:var(--font-mono);font-weight:400;font-size:10px;letter-spacing:.14em;color:var(--muted)}
+#sfr-detail{font-family:var(--font-serif);font-size:22px;line-height:1.85;color:var(--ink-3);margin-top:14px}
+#sfr-detail strong{font-family:var(--font-mono);font-weight:400;font-size:18px;letter-spacing:.14em;color:var(--muted)}
 
 /* recovery */
 .recovery-row{display:grid;grid-template-columns:minmax(120px,1.3fr) 1fr minmax(76px,.7fr);gap:0;align-items:start;padding:14px 16px;border-bottom:1px solid var(--line-subtle)}
 .recovery-row:last-child{border-bottom:none}
-.recovery-name{font-family:var(--font-serif);font-size:15.5px;font-weight:600;color:var(--ink)}
-.recovery-cite{font-family:var(--font-sans);font-size:11px;line-height:1.7;color:var(--muted-light);margin-top:3px}
+.recovery-name{font-family:var(--font-serif);font-size:23.5px;font-weight:600;color:var(--ink)}
+.recovery-cite{font-family:var(--font-sans);font-size:19px;line-height:1.7;color:var(--muted-light);margin-top:3px}
 .recovery-bar-wrap{display:flex;align-items:center;gap:10px;padding-top:3px}
 .recovery-track{flex:1;height:4px;background:var(--paper-deep);border-radius:999px;overflow:hidden}
 .recovery-fill{height:100%;background:var(--accent);border-radius:999px}
-.recovery-hours{font-family:var(--font-mono);font-size:11px;color:var(--muted);white-space:nowrap}
-.recovery-freq{font-family:var(--font-sans);font-size:12.5px;color:var(--ink-3);text-align:right;padding-top:2px}
-.recovery-head{display:grid;grid-template-columns:minmax(120px,1.3fr) 1fr minmax(76px,.7fr);padding:12px 16px;border-bottom:1px solid var(--line);background:var(--paper-soft);font-family:var(--font-mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);border-radius:var(--r-xs) var(--r-xs) 0 0}
+.recovery-hours{font-family:var(--font-mono);font-size:19px;color:var(--muted);white-space:nowrap}
+.recovery-freq{font-family:var(--font-sans);font-size:20.5px;color:var(--ink-3);text-align:right;padding-top:2px}
+.recovery-head{display:grid;grid-template-columns:minmax(120px,1.3fr) 1fr minmax(76px,.7fr);padding:12px 16px;border-bottom:1px solid var(--line);background:var(--paper-soft);font-family:var(--font-mono);font-size:17.5px;letter-spacing:.14em;color:var(--muted);border-radius:var(--r-xs) var(--r-xs) 0 0}
 
 /* tempo */
 .tempo-phase{width:76px;text-align:center;border:1px solid var(--line);border-radius:var(--r-xs);padding:14px 4px;background:var(--paper-card);transition:border-color .2s}
 .tempo-phase.active-tp{border-color:var(--accent)}
-.tp-num{font-family:var(--font-serif);font-size:26px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
-.tp-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;color:var(--muted);margin-top:6px}
-.tp-sub{font-family:var(--font-sans);font-size:11px;color:var(--ink-3);margin-top:2px}
+.tp-num{font-family:var(--font-serif);font-size:34px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.tp-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.12em;color:var(--muted);margin-top:6px}
+.tp-sub{font-family:var(--font-sans);font-size:19px;color:var(--ink-3);margin-top:2px}
 .tempo-num-panel{background:var(--ink);border-radius:var(--r-xs);padding:14px 12px;text-align:center}
-.tempo-num-panel .num{font-family:var(--font-mono);font-size:22px;color:var(--accent-on);line-height:1.2;font-variant-numeric:tabular-nums}
-.tempo-num-panel .lbl{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;color:var(--accent-on);opacity:.6;margin-top:4px}
+.tempo-num-panel .num{font-family:var(--font-mono);font-size:30px;color:var(--accent-on);line-height:1.2;font-variant-numeric:tabular-nums}
+.tempo-num-panel .lbl{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.12em;color:var(--accent-on);opacity:.6;margin-top:4px}
 .tempo-zone{background:var(--ink);border-radius:var(--r-xs);padding:14px 12px;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:5px}
-.tempo-zone .zone{font-family:var(--font-serif);font-size:15px;color:var(--accent-on)}
-.tempo-zone .lbl{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;color:var(--accent-on);opacity:.6}
+.tempo-zone .zone{font-family:var(--font-serif);font-size:23px;color:var(--accent-on)}
+.tempo-zone .lbl{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.12em;color:var(--accent-on);opacity:.6}
 
 /* 1RM */
 .rm-formula-tabs{display:flex;gap:7px;margin-bottom:18px;flex-wrap:wrap}
-.rm-ftab{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--muted);cursor:pointer;background:transparent;transition:all .2s}
+.rm-ftab{font-family:var(--font-mono);font-size:18.5px;letter-spacing:.08em;padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--muted);cursor:pointer;background:transparent;transition:all .2s}
 .rm-ftab:hover{color:var(--ink);border-color:var(--line-strong)}
 .rm-ftab.active{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
 .rm-result-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:4px}
 .rm-result-cell{background:var(--paper);border:1px solid var(--line-subtle);border-radius:var(--r-xs);padding:12px 6px;text-align:center;transition:border-color .2s}
 .rm-result-cell.highlight{background:var(--accent);border-color:var(--accent)}
-.rm-reps-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
-.rm-weight-val{font-family:var(--font-mono);font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
-.rm-pct{font-family:var(--font-mono);font-size:9.5px;color:var(--muted-light);margin-top:4px}
+.rm-reps-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.rm-weight-val{font-family:var(--font-mono);font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
+.rm-pct{font-family:var(--font-mono);font-size:17.5px;color:var(--muted-light);margin-top:4px}
 .rm-result-cell.highlight .rm-reps-label,.rm-result-cell.highlight .rm-pct{color:var(--accent-on);opacity:.62}
 .rm-result-cell.highlight .rm-weight-val{color:var(--accent-on)}
 
 /* volume */
-.vol-set-row,.vol-set-header{display:grid;grid-template-columns:1fr 82px 66px 66px 30px;gap:8px;align-items:end}
+.vol-set-row,.vol-set-header{display:grid;grid-template-columns:1fr 96px 72px 72px 34px;gap:8px;align-items:end}
 .vol-set-row{margin-bottom:9px}
 .vol-set-header{margin-bottom:7px}
-.vol-col-label{font-family:var(--font-mono);font-size:9px;letter-spacing:.1em;color:var(--muted);padding-bottom:2px}
-.vol-add-btn{width:100%;margin-top:8px;padding:11px;background:none;border:1px dashed var(--line-strong);border-radius:var(--r-xs);color:var(--muted);font-family:var(--font-sans);font-size:12.5px;cursor:pointer;transition:all .2s}
+.vol-col-label{font-family:var(--font-mono);font-size:17px;letter-spacing:.1em;color:var(--muted);padding-bottom:2px}
+.vol-add-btn{width:100%;margin-top:8px;padding:11px;background:none;border:1px dashed var(--line-strong);border-radius:var(--r-xs);color:var(--muted);font-family:var(--font-sans);font-size:20.5px;cursor:pointer;transition:all .2s}
 .vol-add-btn:hover{border-color:var(--accent);color:var(--accent)}
 .vol-remove-btn{width:30px;height:40px;border:1px solid var(--line);border-radius:var(--r-xs);background:transparent;color:var(--muted);cursor:pointer;display:grid;place-items:center;transition:all .2s}
 .vol-remove-btn:hover{border-color:var(--accent);color:var(--accent)}
@@ -645,68 +647,68 @@ html[data-theme="midnight"] .video-thumb-fallback{background:repeating-linear-gr
 .vol-summary.show{display:block;animation:fadeIn .35s var(--ease-soft) both}
 .vol-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
 .vol-stat{text-align:center}
-.vol-stat-num{font-family:var(--font-mono);font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
-.vol-stat-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);margin-top:4px}
+.vol-stat-num{font-family:var(--font-mono);font-size:32px;color:var(--ink);font-variant-numeric:tabular-nums}
+.vol-stat-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.14em;color:var(--muted);margin-top:4px}
 .vol-muscle-list{display:flex;flex-direction:column;gap:9px}
 .vol-muscle-row{display:flex;align-items:center;gap:12px}
-.vol-muscle-name{font-family:var(--font-sans);font-size:12.5px;color:var(--ink-3);min-width:84px}
+.vol-muscle-name{font-family:var(--font-sans);font-size:20.5px;color:var(--ink-3);min-width:118px}
 .vol-muscle-bar-track{flex:1;height:4px;background:var(--paper-deep);border-radius:999px;overflow:hidden}
 .vol-muscle-bar-fill{height:100%;background:var(--accent);border-radius:999px;transition:width .45s var(--ease-soft)}
-.vol-muscle-sets{font-family:var(--font-mono);font-size:11px;color:var(--muted);min-width:42px;text-align:right}
-.vol-tonnage{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--muted);margin-top:16px;text-align:center;line-height:1.8}
+.vol-muscle-sets{font-family:var(--font-mono);font-size:19px;color:var(--muted);min-width:56px;text-align:right}
+.vol-tonnage{font-family:var(--font-mono);font-size:18px;letter-spacing:.06em;color:var(--muted);margin-top:16px;text-align:center;line-height:1.8}
 
 /* TDEE */
 .tdee-result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}
 .tdee-cell{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-xs);padding:16px;text-align:center}
 .tdee-cell.highlight{background:var(--accent);border-color:var(--accent)}
-.tdee-cell-num{font-family:var(--font-mono);font-size:23px;color:var(--ink);font-variant-numeric:tabular-nums}
-.tdee-cell-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;color:var(--muted);margin-top:5px}
+.tdee-cell-num{font-family:var(--font-mono);font-size:31px;color:var(--ink);font-variant-numeric:tabular-nums}
+.tdee-cell-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.12em;color:var(--muted);margin-top:5px}
 .tdee-cell.highlight .tdee-cell-num{color:var(--accent-on)}
 .tdee-cell.highlight .tdee-cell-label{color:var(--accent-on);opacity:.65}
 .tdee-macro-row{display:flex;align-items:center;gap:12px;margin-top:12px}
 .tdee-macro-color{width:8px;height:8px;border-radius:2px;flex-shrink:0;background:var(--accent)}
-.tdee-macro-label{font-family:var(--font-sans);font-size:12.5px;color:var(--ink-3);flex:1}
-.tdee-macro-val{font-family:var(--font-mono);font-size:12.5px;color:var(--ink);font-variant-numeric:tabular-nums}
+.tdee-macro-label{font-family:var(--font-sans);font-size:20.5px;color:var(--ink-3);flex:1}
+.tdee-macro-val{font-family:var(--font-mono);font-size:20.5px;color:var(--ink);font-variant-numeric:tabular-nums}
 
 /* journal & progress */
 .journal-entry{position:relative;background:transparent;border-bottom:1px solid var(--line-subtle);padding:20px 44px 20px 0}
 .journal-entry:first-child{border-top:1px solid var(--line)}
-.journal-entry-date{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;color:var(--muted-light);margin-bottom:8px}
-.journal-entry-title{font-family:var(--font-serif);font-size:17px;font-weight:600;color:var(--ink);margin-bottom:8px}
-.journal-entry-body{font-family:var(--font-serif);font-size:14.5px;line-height:1.9;color:var(--ink-body)}
+.journal-entry-date{font-family:var(--font-mono);font-size:18px;letter-spacing:.1em;color:var(--muted-light);margin-bottom:8px}
+.journal-entry-title{font-family:var(--font-serif);font-size:25px;font-weight:600;color:var(--ink);margin-bottom:8px}
+.journal-entry-body{font-family:var(--font-serif);font-size:22.5px;line-height:1.9;color:var(--ink-body)}
 .journal-entry-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.journal-entry-tag{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.06em;padding:3px 9px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
-.journal-delete-btn{position:absolute;top:18px;right:0;width:28px;height:28px;display:grid;place-items:center;background:none;border:1px solid transparent;border-radius:50%;cursor:pointer;color:var(--muted-light);font-family:var(--font-mono);font-size:12px;transition:all .2s}
+.journal-entry-tag{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.06em;padding:3px 9px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.journal-delete-btn{position:absolute;top:18px;right:0;width:28px;height:28px;display:grid;place-items:center;background:none;border:1px solid transparent;border-radius:50%;cursor:pointer;color:var(--muted-light);font-family:var(--font-mono);font-size:20px;transition:all .2s}
 .journal-delete-btn:hover{border-color:var(--line);color:var(--accent)}
 .journal-form-area{background:var(--paper-card);border:1px solid var(--line-subtle);border-radius:var(--r-xs);padding:24px;margin-bottom:28px}
-.journal-textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:var(--r-xs);font-family:var(--font-serif);font-size:14.5px;line-height:1.85;color:var(--ink);background:var(--paper);resize:vertical;min-height:96px;outline:none;transition:border-color .2s}
+.journal-textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:var(--r-xs);font-family:var(--font-serif);font-size:22.5px;line-height:1.85;color:var(--ink);background:var(--paper);resize:vertical;min-height:96px;outline:none;transition:border-color .2s}
 .journal-textarea:focus{border-color:var(--ink)}
 .journal-tag-row{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
-.journal-tag-btn{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;padding:6px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:transparent;cursor:pointer;transition:all .2s}
+.journal-tag-btn{font-family:var(--font-mono);font-size:18px;letter-spacing:.08em;padding:6px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:transparent;cursor:pointer;transition:all .2s}
 .journal-tag-btn.selected{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
-.journal-empty{text-align:center;padding:44px 0;font-family:var(--font-serif);font-size:14px;color:var(--muted)}
+.journal-empty{text-align:center;padding:44px 0;font-family:var(--font-serif);font-size:22px;color:var(--muted)}
 .progress-chart-wrap{background:var(--paper-card);border:1px solid var(--line-subtle);border-radius:var(--r-xs);padding:24px;margin-bottom:18px}
-.progress-chart-title{font-family:var(--font-serif);font-size:17px;font-weight:600;color:var(--ink);margin-bottom:16px}
+.progress-chart-title{font-family:var(--font-serif);font-size:25px;font-weight:600;color:var(--ink);margin-bottom:16px}
 .progress-canvas-wrap{position:relative;width:100%;height:180px}
 canvas.progress-canvas{width:100%;height:180px}
 .progress-stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
 .progress-stat{text-align:center;padding:14px 8px;background:var(--paper-soft);border-radius:var(--r-xs)}
-.progress-stat-num{font-family:var(--font-mono);font-size:19px;color:var(--ink);font-variant-numeric:tabular-nums}
-.progress-stat-label{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;color:var(--muted);margin-top:5px}
-.progress-exercise-select{padding:10px 13px;border:1px solid var(--line);border-radius:var(--r-xs);font-family:var(--font-sans);font-size:13px;color:var(--ink);background:var(--paper);outline:none;cursor:pointer;width:100%}
+.progress-stat-num{font-family:var(--font-mono);font-size:27px;color:var(--ink);font-variant-numeric:tabular-nums}
+.progress-stat-label{font-family:var(--font-mono);font-size:17px;letter-spacing:.12em;color:var(--muted);margin-top:5px}
+.progress-exercise-select{padding:10px 13px;border:1px solid var(--line);border-radius:var(--r-xs);font-family:var(--font-sans);font-size:21px;color:var(--ink);background:var(--paper);outline:none;cursor:pointer;width:100%}
 
 /* schedule generator */
 .sched-option-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px}
 .sched-option{border:1px solid var(--line);border-radius:var(--r-xs);padding:14px 8px;text-align:center;cursor:pointer;background:var(--paper);transition:all .2s}
 .sched-option:hover{border-color:var(--line-strong)}
 .sched-option.selected{background:var(--accent);border-color:var(--accent);color:var(--accent-on)}
-.sched-option-num{font-family:var(--font-serif);font-size:22px;line-height:1.2}
-.sched-option-label{font-family:var(--font-sans);font-size:11px;margin-top:3px;opacity:.7}
+.sched-option-num{font-family:var(--font-serif);font-size:30px;line-height:1.2}
+.sched-option-label{font-family:var(--font-sans);font-size:19px;margin-top:3px;opacity:.7}
 .sched-result-day{background:var(--paper-card);border:1px solid var(--line-subtle);border-radius:var(--r-xs);padding:20px 22px;margin-bottom:12px}
-.sched-day-name{display:flex;align-items:center;gap:10px;font-family:var(--font-serif);font-size:15px;font-weight:600;color:var(--ink);margin-bottom:10px}
-.sched-day-badge{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;padding:3px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.sched-day-name{display:flex;align-items:center;gap:10px;font-family:var(--font-serif);font-size:23px;font-weight:600;color:var(--ink);margin-bottom:10px}
+.sched-day-badge{font-family:var(--font-mono);font-size:17px;letter-spacing:.12em;padding:3px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
 .sched-day-badge.train{background:var(--accent);border-color:var(--accent);color:var(--accent-on)}
-.sched-exercise-list{font-family:var(--font-sans);font-size:13.5px;line-height:1.9;color:var(--ink-body)}
+.sched-exercise-list{font-family:var(--font-sans);font-size:21.5px;line-height:1.9;color:var(--ink-body)}
 .sched-exercise-list strong{font-weight:600;color:var(--ink)}
 
 /* ---------- footer ---------- */
@@ -714,17 +716,17 @@ footer{
   max-width:var(--container);margin:0 auto;padding:44px 24px 64px;
   border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;
 }
-.footer-note{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted)}
+.footer-note{font-family:var(--font-mono);font-size:18.5px;letter-spacing:.08em;color:var(--muted)}
 .footer-links{display:flex;gap:22px}
-.footer-links a{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;color:var(--muted);transition:color .2s}
+.footer-links a{font-family:var(--font-mono);font-size:18.5px;letter-spacing:.12em;color:var(--muted);transition:color .2s}
 .footer-links a:hover{color:var(--ink)}
 
 /* ---------- misc / old-class compatibility ---------- */
 .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .feat-card{background:var(--paper-card);border:1px solid var(--line-subtle);border-radius:var(--r-xs);padding:26px}
-.feat-cat{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--muted);margin-bottom:10px}
-.feat-title{font-family:var(--font-serif);font-size:17px;font-weight:600;color:var(--ink);line-height:1.6;margin-bottom:6px}
-.feat-desc{font-family:var(--font-serif);font-size:14px;line-height:1.8;color:var(--ink-body)}
+.feat-cat{font-family:var(--font-mono);font-size:18px;letter-spacing:.14em;color:var(--muted);margin-bottom:10px}
+.feat-title{font-family:var(--font-serif);font-size:25px;font-weight:600;color:var(--ink);line-height:1.6;margin-bottom:6px}
+.feat-desc{font-family:var(--font-serif);font-size:22px;line-height:1.8;color:var(--ink-body)}
 .feat-card.dark{background:var(--ink);border-color:var(--ink)}
 .feat-card.dark .feat-cat{color:var(--accent-on);opacity:.7}
 .feat-card.dark .feat-title,.feat-card.dark .feat-desc{color:var(--accent-on)}
@@ -733,8 +735,8 @@ footer{
 .reveal{opacity:1;transform:none}
 .reveal.in{opacity:1;transform:none}
 .reveal-delay-1{transition-delay:.08s}.reveal-delay-2{transition-delay:.14s}.reveal-delay-3{transition-delay:.2s}.reveal-delay-4{transition-delay:.26s}
-.hero-label{font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;color:var(--muted);margin-bottom:20px}
-.hero-sub{font-family:var(--font-serif);font-size:16px;line-height:1.9;color:var(--muted)}
+.hero-label{font-family:var(--font-mono);font-size:19px;letter-spacing:.2em;color:var(--muted);margin-bottom:20px}
+.hero-sub{font-family:var(--font-serif);font-size:24px;line-height:1.9;color:var(--muted)}
 
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -755,37 +757,37 @@ footer{
 }
 @media(max-width:640px){
   :root{--nav-h:62px}
-  body{font-size:15.5px}
+  body{font-size:23.5px}
   .section{padding:48px 20px}
   .article-page{padding-top:36px;padding-bottom:56px}
   .hero{padding:48px 20px 40px}
-  .hero-title{font-size:clamp(30px,9vw,38px)}
-  .hero-body{font-size:16px}
+  .hero-title{font-size:clamp(38px,9vw,46px)}
+  .hero-body{font-size:24px}
   .hero-meta{border-top:1px solid var(--line);border-bottom:none}
   .meta-item{width:100%;border-left:none;padding:12px 0;border-bottom:1px solid var(--line-subtle)}
   .meta-item:first-child{padding-top:0}
   .meta-item:last-child{border-bottom:none}
   .nav-inner{gap:10px}
-  .site-name{font-size:17px}
+  .site-name{font-size:25px}
   .post-item{grid-template-columns:1fr auto;gap:6px 14px;padding:18px 2px}
   .post-left{display:contents}
-  .post-tag{grid-column:1;font-size:9.5px}
-  .post-title{grid-column:1/-1;order:3;font-size:16px}
-  .post-date{grid-column:2;grid-row:1;order:2;font-size:10px}
-  .article-title{font-size:clamp(24px,7vw,30px)}
-  .article-lede{font-size:15.5px}
-  .article-prose{font-size:16px;line-height:1.9}
-  .kc-title{font-size:17.5px}
+  .post-tag{grid-column:1;font-size:17.5px}
+  .post-title{grid-column:1/-1;order:3;font-size:24px}
+  .post-date{grid-column:2;grid-row:1;order:2;font-size:18px}
+  .article-title{font-size:clamp(32px,7vw,38px)}
+  .article-lede{font-size:23.5px}
+  .article-prose{font-size:24px;line-height:1.9}
+  .kc-title{font-size:25.5px}
   .tabs{margin-bottom:24px}
-  .tab{font-size:13px;padding:10px 12px}
+  .tab{font-size:21px;padding:10px 12px}
   .schedule-grid{grid-template-columns:repeat(4,1fr)!important;gap:6px}
   .calc-row{flex-direction:column;align-items:stretch}
   .rm-result-grid{grid-template-columns:repeat(3,1fr)}
-  .vol-set-row,.vol-set-header{grid-template-columns:1fr 62px 52px 52px 28px;gap:5px}
+  .vol-set-row,.vol-set-header{grid-template-columns:1fr 80px 62px 62px 32px;gap:5px}
   .vol-summary-grid{grid-template-columns:repeat(2,1fr)}
   .sched-option-grid{grid-template-columns:repeat(3,1fr)}
   .tools-subnav{padding:0 12px;top:var(--nav-h)}
-  .tools-tab{padding:12px 11px;font-size:12px}
+  .tools-tab{padding:12px 11px;font-size:20px}
   .tdee-result-grid{grid-template-columns:1fr 1fr}
   .journal-form-area{padding:18px}
   footer{flex-direction:column;align-items:flex-start;padding:34px 20px 52px}
@@ -793,7 +795,7 @@ footer{
 }
 @media(max-width:400px){
   .schedule-grid{grid-template-columns:repeat(3,1fr)!important}
-  .article-prose{font-size:15.5px}
+  .article-prose{font-size:23.5px}
   .temp-row{flex-wrap:wrap}
 }
 
@@ -824,8 +826,8 @@ footer{
 
 /* ---------- SFR 卡片 ---------- */
 .sfr-cell{background:var(--paper);border:1px solid var(--line-subtle);border-radius:var(--r-xs);padding:14px 10px;text-align:center}
-.sfr-cell-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);margin-top:5px}
-#sfr-stim-val,#sfr-fat-val,#sfr-score-val{font-family:var(--font-mono);font-size:21px;line-height:1.2;color:var(--ink);font-variant-numeric:tabular-nums}
+.sfr-cell-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.14em;color:var(--muted);margin-top:5px}
+#sfr-stim-val,#sfr-fat-val,#sfr-score-val{font-family:var(--font-mono);font-size:29px;line-height:1.2;color:var(--ink);font-variant-numeric:tabular-nums}
 #sfr-stim-bar{background:var(--accent)}
 #sfr-fat-bar{background:var(--line-strong)}
 .sfr-verdict-good{background:var(--accent-soft);border-color:var(--accent-soft);color:var(--ink)}
@@ -836,17 +838,17 @@ footer{
 .tempo-num-panel{background:var(--ink);border-radius:var(--r-xs);padding:15px 10px;text-align:center}
 .tempo-num-panel--reps{position:relative}
 .tempo-num-panel #tut-per-rep,.tempo-num-panel #tut-reps-disp,.tempo-num-panel #tut-per-set{
-  font-family:var(--font-mono);font-size:22px;line-height:1.2;color:var(--accent-on);margin:0;opacity:1
+  font-family:var(--font-mono);font-size:30px;line-height:1.2;color:var(--accent-on);margin:0;opacity:1
 }
-.tempo-num-panel .pnl-label{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;color:var(--accent-on);opacity:.6;margin-top:5px}
-#tut-zone{font-family:var(--font-serif);font-size:15px;color:var(--accent-on);padding-top:0}
-#tut-reps-input{position:absolute;bottom:6px;right:6px;width:40px;font-family:var(--font-mono);font-size:11px;background:transparent;border:1px solid var(--accent-soft);border-radius:2px;color:var(--accent-on);text-align:center;padding:2px}
-.tempo-notes{font-family:var(--font-serif);font-size:13.5px;line-height:1.9;color:var(--ink-body);padding:14px 16px;background:var(--paper-soft);border-radius:var(--r-xs)}
-.tempo-dash{display:flex;align-items:center;color:var(--muted);font-family:var(--font-mono);font-size:14px}
+.tempo-num-panel .pnl-label{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.12em;color:var(--accent-on);opacity:.6;margin-top:5px}
+#tut-zone{font-family:var(--font-serif);font-size:23px;color:var(--accent-on);padding-top:0}
+#tut-reps-input{position:absolute;bottom:6px;right:6px;width:40px;font-family:var(--font-mono);font-size:19px;background:transparent;border:1px solid var(--accent-soft);border-radius:2px;color:var(--accent-on);text-align:center;padding:2px}
+.tempo-notes{font-family:var(--font-serif);font-size:21.5px;line-height:1.9;color:var(--ink-body);padding:14px 16px;background:var(--paper-soft);border-radius:var(--r-xs)}
+.tempo-dash{display:flex;align-items:center;color:var(--muted);font-family:var(--font-mono);font-size:22px}
 
 /* ---------- recovery 表頭 ---------- */
 .recovery-head{display:grid;grid-template-columns:minmax(120px,1.3fr) 1fr minmax(76px,.7fr);gap:0;padding:12px 16px;background:var(--paper-soft);border-bottom:1px solid var(--line);border-radius:var(--r-xs) var(--r-xs) 0 0}
-.recovery-head span{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted)}
+.recovery-head span{font-family:var(--font-mono);font-size:17.5px;letter-spacing:.14em;color:var(--muted)}
 .recovery-head span:last-child{text-align:right}
 #tools-recovery .calc-card{padding:0;overflow:hidden}
 #tools-recovery .calc-card > div:first-child{border-radius:var(--r-xs) var(--r-xs) 0 0}
@@ -866,13 +868,15 @@ footer{
 #tools-recovery .calc-card + div span:nth-child(3) > span[style]{opacity:1}
 .article-toc .toc-title{margin-bottom:14px}
 @media(max-width:640px){
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .protein-table{min-width:600px}
   .article-toc{padding:18px 18px}
   .toc-list{gap:0}
   .toc-list a{padding:7px 0;border-bottom:1px solid var(--line-subtle)}
   .toc-list a:last-child{border-bottom:none}
 }
 
-.skip-link{position:absolute;left:-9999px;top:12px;z-index:200;background:var(--ink);color:var(--accent-on);padding:10px 16px;font-family:var(--font-sans);font-size:13px;border-radius:var(--r-xs)}
+.skip-link{position:absolute;left:-9999px;top:12px;z-index:200;background:var(--ink);color:var(--accent-on);padding:10px 16px;font-family:var(--font-sans);font-size:21px;border-radius:var(--r-xs)}
 .skip-link:focus{left:16px}
 .page:focus{outline:none}
 
@@ -1447,14 +1451,14 @@ footer{
       <p class="article-prose">
         蛋白質是肌肉合成的原料，但「到底要吃多少」這個問題，不同族群、不同目標的答案差很多。以下整理自 <a href="https://www.commonhealth.com.tw/article/90813" target="_blank">康健雜誌（2024）</a> 與 <a href="https://www.careonline.com.tw/2019/07/protein.html" target="_blank">照護線上</a> 的營養師建議，以及相關研究數據：
       </p>
-      <table class="protein-table">
+      <div class="table-scroll"><table class="protein-table">
         <tr><th>族群</th><th>每公斤體重蛋白質</th><th>舉例（60kg）</th></tr>
         <tr><td>一般人（無運動）</td><td>0.8–1.2 g</td><td>48–72 g/天</td></tr>
         <tr><td>有訓練，維持肌肉</td><td>1.2–1.6 g</td><td>72–96 g/天</td></tr>
         <tr><td>積極增肌期</td><td>1.6–2.2 g</td><td>96–132 g/天</td></tr>
         <tr><td>減脂期（保肌）</td><td>1.6–2.4 g</td><td>96–144 g/天</td></tr>
         <tr><td>70 歲以上長者（健康）</td><td>1.0–1.2 g（生病 1.2–1.5）</td><td>60–72 g/天</td></tr>
-      </table>
+      </table></div>
       <p class="article-prose" style="margin-top:12px">
         Morton 等人（2018）的薈萃分析顯示增肌效益在每日約 1.62 g/kg 後趨於平台；減脂期需求更高，Helms 等人（2014）的建議是 2.3–3.1 g/kg 去脂體重，換算成體重約 <strong>1.6–2.4 g/kg</strong>。目的是保住無脂肌肉量（lean body mass），別讓肌肉在熱量赤字下流失。訓練強度越高、熱量缺口越大，蛋白質目標應越靠近上限。
       </p>
@@ -1512,7 +1516,7 @@ footer{
     <div class="day-box active"><div class="day-name">六</div><div class="day-content">腿日<br>籃球</div></div>
     <div class="day-box rest"><div class="day-name">日</div><div class="day-content">休息</div></div>
   </div>
-  <p style="font-size:13px;margin-top:14px">六練一微週期，每 3–4 週安排一次 9 日 Deload。強度以 8–10RM 為主，每肌群每週約 20 組總訓練量。</p>
+  <p style="font-size:21px;margin-top:14px">六練一微週期，每 3–4 週安排一次 9 日 Deload。強度以 8–10RM 為主，每肌群每週約 20 組總訓練量。</p>
 
   <div class="knowledge-card" style="margin-top:20px">
     <div class="kc-title">推日動作清單（胸 / 肩 / 三頭）</div>
@@ -1547,7 +1551,7 @@ footer{
     </div>
   </div>
 
-  <div class="kc-source" style="margin-top:12px;font-size:11px">
+  <div class="kc-source" style="margin-top:12px;font-size:19px">
     參考：<a href="https://pubmed.ncbi.nlm.nih.gov/41343037/" target="_blank">Pelland et al. The Resistance Training Dose Response. <em>Sports Med</em>. 2026;56(2):481–505.</a>、<a href="https://pubmed.ncbi.nlm.nih.gov/30558493/" target="_blank">Schoenfeld et al. How Many Times per Week Should a Muscle Be Trained to Maximize Muscle Hypertrophy? <em>J Sports Sci</em>. 2019;37(11):1286–1295.</a>
   </div>
 </section>
@@ -2302,7 +2306,7 @@ footer{
 <section class="section">
   <div class="section-label">SFR — 刺激疲勞比</div>
   <div class="kc-title" style="margin-bottom:4px">選動作、負荷和組數，算這次訓練的 SFR 分數</div>
-  <p style="font-size:12px;margin-bottom:20px">SFR（Stimulus-to-Fatigue Ratio）由 Mike Israetel 提出，衡量每單位疲勞能換到多少肌肉刺激。分數越高，效益越好。此分數是站方自訂的啟發式估計，不是研究量表。</p>
+  <p style="font-size:20px;margin-bottom:20px">SFR（Stimulus-to-Fatigue Ratio）由 Mike Israetel 提出，衡量每單位疲勞能換到多少肌肉刺激。分數越高，效益越好。此分數是站方自訂的啟發式估計，不是研究量表。</p>
   <div class="calc-card">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
       <div class="calc-field">
@@ -2348,16 +2352,16 @@ footer{
     <div class="calc-result" id="sfr-result" style="display:block;padding:16px">
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px">
         <div class="sfr-cell">
-          <div style="font-size:22px;font-weight:700" id="sfr-stim-val">—</div>
-          <div class="sfr-cell-label">刺激</div>
+          <div style="font-size:30px;font-weight:700" id="sfr-stim-val">—</div>
+          <div style="font-size:20px;margin-top:2px">刺激</div>
         </div>
         <div class="sfr-cell">
-          <div style="font-size:22px;font-weight:700" id="sfr-fat-val">—</div>
-          <div class="sfr-cell-label">疲勞</div>
+          <div style="font-size:30px;font-weight:700" id="sfr-fat-val">—</div>
+          <div style="font-size:20px;margin-top:2px">疲勞</div>
         </div>
         <div class="sfr-cell">
-          <div style="font-size:22px;font-weight:700" id="sfr-score-val">—</div>
-          <div class="sfr-cell-label">SFR 分數</div>
+          <div style="font-size:30px;font-weight:700" id="sfr-score-val">—</div>
+          <div style="font-size:20px;margin-top:2px">SFR 分數</div>
         </div>
       </div>
       <div style="margin-bottom:10px">
@@ -2366,15 +2370,15 @@ footer{
           <div id="sfr-fat-bar" style="transition:width .3s;height:100%"></div>
         </div>
         <div style="display:flex;justify-content:space-between;margin-top:4px">
-          <span style="font-size:10px">刺激</span>
-          <span style="font-size:10px">疲勞</span>
+          <span style="font-size:18px">刺激</span>
+          <span style="font-size:18px">疲勞</span>
         </div>
       </div>
-      <div id="sfr-verdict" style="font-size:13px;padding:10px 12px;border-radius:8px;line-height:1.6"></div>
-      <div id="sfr-detail" style="font-size:13px;margin-top:10px;line-height:1.6"></div>
+      <div id="sfr-verdict" style="font-size:21px;padding:10px 12px;border-radius:8px;line-height:1.6"></div>
+      <div id="sfr-detail" style="font-size:21px;margin-top:10px;line-height:1.6"></div>
     </div>
   </div>
-  <div class="kc-source" style="margin-top:12px;font-size:11px">
+  <div class="kc-source" style="margin-top:12px;font-size:19px">
     參考：Israetel M, Hoffmann J, Davis M, Feather J. <em>Scientific Principles of Hypertrophy Training</em>. Renaissance Periodization, 2021.
   </div>
 </section>
@@ -2385,21 +2389,21 @@ footer{
 <section class="section">
   <div class="section-label">肌肉恢復指南</div>
   <div class="kc-title" style="margin-bottom:4px">各肌群恢復時間與建議訓練頻率</div>
-  <p style="font-size:12px;margin-bottom:20px">恢復時間 = 力量回到基準水準所需的時間。高強度複合動作帶來的是系統性疲勞，不只局部肌肉損傷。</p>
+  <p style="font-size:20px;margin-bottom:20px">恢復時間 = 力量回到基準水準所需的時間。高強度複合動作帶來的是系統性疲勞，不只局部肌肉損傷。</p>
   <div class="calc-card" style="padding:0">
     <div class="recovery-head">
-      <span style="font-size:12px;text-transform:uppercase;letter-spacing:.05em">肌群</span>
-      <span style="font-size:12px;text-transform:uppercase;letter-spacing:.05em">恢復窗口</span>
-      <span style="font-size:12px;text-transform:uppercase;letter-spacing:.05em">建議頻率</span>
+      <span style="font-size:20px;text-transform:uppercase;letter-spacing:.05em">肌群</span>
+      <span style="font-size:20px;text-transform:uppercase;letter-spacing:.05em">恢復窗口</span>
+      <span style="font-size:20px;text-transform:uppercase;letter-spacing:.05em">建議頻率</span>
     </div>
     <div id="recovery-list"></div>
   </div>
   <div style="display:flex;gap:16px;margin-top:12px;flex-wrap:wrap">
-    <span style="font-size:11px;display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;display:inline-block"></span>快速（&lt;48h）</span>
-    <span style="font-size:11px;display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;display:inline-block"></span>中速（48–72h）</span>
-    <span style="font-size:11px;display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;display:inline-block"></span>慢速（&gt;72h）</span>
+    <span style="font-size:19px;display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;display:inline-block"></span>快速（&lt;48h）</span>
+    <span style="font-size:19px;display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;display:inline-block"></span>中速（48–72h）</span>
+    <span style="font-size:19px;display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;border-radius:2px;display:inline-block"></span>慢速（&gt;72h）</span>
   </div>
-  <div class="kc-source" style="margin-top:12px;font-size:11px">
+  <div class="kc-source" style="margin-top:12px;font-size:19px">
     參考：Damas et al., 2016, <em>J Physiol</em>, 594(18):5209–5222；Nosaka &amp; Newton, 2002, <em>J Strength Cond Res</em>, 16(2):202–208；Schoenfeld et al., 2019, J Sports Sci, 37(11):1286–1295.
   </div>
 </section>
@@ -2410,7 +2414,7 @@ footer{
 <section class="section">
   <div class="section-label">節奏 &amp; TUT 計算機</div>
   <div class="kc-title" style="margin-bottom:4px">設定四段節奏，自動計算每組張力時間（TUT）</div>
-  <p style="font-size:13px;margin-bottom:20px">節奏格式：<strong >離心—底部暫停—向心—頂部暫停</strong>（秒）。實務上常把單組 TUT 抓在 30–70 秒，不過系統性回顧顯示，每下 0.5–8 秒的節奏都能帶來相近的肌肥大效果（Schoenfeld et al., 2015, Sports Med, 45(4):577–585）；關鍵是動作控制與接近力竭，而不是某個特定秒數。</p>
+  <p style="font-size:21px;margin-bottom:20px">節奏格式：<strong >離心—底部暫停—向心—頂部暫停</strong>（秒）。實務上常把單組 TUT 抓在 30–70 秒，不過系統性回顧顯示，每下 0.5–8 秒的節奏都能帶來相近的肌肥大效果（Schoenfeld et al., 2015, Sports Med, 45(4):577–585）；關鍵是動作控制與接近力竭，而不是某個特定秒數。</p>
   <div class="calc-card">
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:20px">
       <div class="calc-field">
@@ -2434,37 +2438,37 @@ footer{
     <!-- Phase display -->
     <div style="display:flex;gap:8px;justify-content:center;margin-bottom:20px">
       <div class="tempo-phase" id="tp-0"><div class="tp-num" id="tp-0-n">3</div><div class="tp-label">離心</div><div class="tp-sub">下降</div></div>
-      <div class="tempo-dash">—</div>
+      <div style="display:flex;align-items:center;font-size:26px">—</div>
       <div class="tempo-phase" id="tp-1"><div class="tp-num" id="tp-1-n">1</div><div class="tp-label">暫停</div><div class="tp-sub">底部</div></div>
-      <div class="tempo-dash">—</div>
+      <div style="display:flex;align-items:center;font-size:26px">—</div>
       <div class="tempo-phase" id="tp-2"><div class="tp-num" id="tp-2-n">2</div><div class="tp-label">向心</div><div class="tp-sub">上升</div></div>
-      <div class="tempo-dash">—</div>
+      <div style="display:flex;align-items:center;font-size:26px">—</div>
       <div class="tempo-phase" id="tp-3"><div class="tp-num" id="tp-3-n">0</div><div class="tp-label">暫停</div><div class="tp-sub">頂部</div></div>
     </div>
 
     <!-- Results -->
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;margin-bottom:16px">
       <div class="tempo-num-panel">
-        <div style="font-size:22px;font-weight:700" id="tut-per-rep">6</div>
-        <div style="font-size:10px;margin-top:2px">秒 / 次</div>
+        <div style="font-size:30px;font-weight:700" id="tut-per-rep">6</div>
+        <div style="font-size:18px;margin-top:2px">秒 / 次</div>
       </div>
       <div class="tempo-num-panel tempo-num-panel--reps">
-        <div style="font-size:22px;font-weight:700" id="tut-reps-disp">8</div>
-        <div style="font-size:10px;margin-top:2px">次數</div>
-        <input type="number" id="tut-reps-input" min="1" max="30" value="8" oninput="updateTempo()" style="position:absolute;bottom:6px;right:6px;width:36px;font-size:11px;border-radius:4px;padding:2px">
+        <div style="font-size:30px;font-weight:700" id="tut-reps-disp">8</div>
+        <div style="font-size:18px;margin-top:2px">次數</div>
+        <input type="number" id="tut-reps-input" min="1" max="30" value="8" oninput="updateTempo()" style="position:absolute;bottom:6px;right:6px;width:36px;font-size:19px;border-radius:4px;padding:2px">
       </div>
       <div class="tempo-num-panel">
-        <div style="font-size:22px;font-weight:700" id="tut-per-set">48</div>
-        <div style="font-size:10px;margin-top:2px">秒 / 組</div>
+        <div style="font-size:30px;font-weight:700" id="tut-per-set">48</div>
+        <div style="font-size:18px;margin-top:2px">秒 / 組</div>
       </div>
       <div class="tempo-num-panel">
-        <div style="font-size:14px;font-weight:500;padding-top:4px" id="tut-zone">肌肥大</div>
-        <div style="font-size:10px;margin-top:4px">訓練區間</div>
+        <div style="font-size:22px;font-weight:500;padding-top:4px" id="tut-zone">肌肥大</div>
+        <div style="font-size:18px;margin-top:4px">訓練區間</div>
       </div>
     </div>
     <div id="tempo-notes" class="tempo-notes"></div>
   </div>
-  <div class="kc-source" style="margin-top:12px;font-size:11px">
+  <div class="kc-source" style="margin-top:12px;font-size:19px">
     參考：Schoenfeld et al., 2015, <em>Sports Med</em>, 45(4):577–585；Burd et al., 2012, <em>J Physiol</em>, 590(2):351–362；Schoenfeld, 2010, J Strength Cond Res, 24(10):2857–2872.
   </div>
 </section>
@@ -2508,7 +2512,7 @@ footer{
   <div class="section-label">1RM 計算機</div>
   <div class="calc-card">
     <div class="kc-title" style="margin-bottom:6px">最大肌力估算（Estimated 1RM）</div>
-    <p style="font-size:13px;margin-bottom:16px;line-height:1.7">
+    <p style="font-size:21px;margin-bottom:16px;line-height:1.7">
       輸入某一組的重量和次數，估算理論最大肌力（1RM），還有各百分比對應的重量。
     </p>
     <div class="rm-formula-tabs">
@@ -2528,9 +2532,9 @@ footer{
       </div>
     </div>
     <div class="calc-result" id="rmResult2">
-      <div class="calc-result-title">估算 1RM：<span id="rmOneRM2" style="font-size:18px;font-weight:500"></span> kg　<span id="rmFormulaLabel2" style="font-size:10px"></span></div>
+      <div class="calc-result-title">估算 1RM：<span id="rmOneRM2" style="font-size:26px;font-weight:500"></span> kg　<span id="rmFormulaLabel2" style="font-size:18px"></span></div>
       <div class="rm-result-grid" id="rmGrid2"></div>
-      <p style="font-size:12px;margin-top:12px;line-height:1.7">
+      <p style="font-size:20px;margin-top:12px;line-height:1.7">
          估算值僅供參考。次數越多（超過 10 下），誤差越大。
       </p>
     </div>
@@ -2544,7 +2548,7 @@ footer{
   <div class="section-label">訓練量計算機</div>
   <div class="calc-card">
     <div class="kc-title" style="margin-bottom:6px">單次訓練 Volume 統計</div>
-    <p style="font-size:13px;margin-bottom:16px;line-height:1.7">
+    <p style="font-size:21px;margin-bottom:16px;line-height:1.7">
       輸入動作、組數、次數和重量，算本次的總訓練量（tonnage）和各肌群有效組數。
     </p>
     <div class="vol-set-header">
@@ -2566,7 +2570,7 @@ footer{
         <div class="vol-stat"><div class="vol-stat-num" id="volTotalReps2">—</div><div class="vol-stat-label">總次數</div></div>
         <div class="vol-stat"><div class="vol-stat-num" id="volTonnage2">—</div><div class="vol-stat-label">總負重量 kg</div></div>
       </div>
-      <div style="font-size:12px;margin-bottom:10px;letter-spacing:.5px;text-transform:uppercase">各肌群有效組數</div>
+      <div style="font-size:20px;margin-bottom:10px;letter-spacing:.5px;text-transform:uppercase">各肌群有效組數</div>
       <div class="vol-muscle-list" id="volMuscleList2"></div>
       <div class="vol-tonnage" id="volNote2"></div>
     </div>
@@ -2580,7 +2584,7 @@ footer{
 <section class="section">
   <div class="section-label">訓練日記</div>
   <div class="kc-title" style="margin-bottom:4px">記錄每次訓練感受、重量和心得</div>
-  <p style="font-size:12px;margin-bottom:20px">資料存在瀏覽器本地，清除快取後會消失。</p>
+  <p style="font-size:20px;margin-bottom:20px">資料存在瀏覽器本地，清除快取後會消失。</p>
 
   <div class="journal-form-area">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
@@ -2619,7 +2623,7 @@ footer{
 <section class="section">
   <div class="section-label">進度圖表</div>
   <div class="kc-title" style="margin-bottom:4px">記錄並追蹤各動作的最大重量進展</div>
-  <p style="font-size:12px;margin-bottom:20px">資料存在瀏覽器本地，清除快取後會消失。</p>
+  <p style="font-size:20px;margin-bottom:20px">資料存在瀏覽器本地，清除快取後會消失。</p>
 
   <div class="calc-card" style="margin-bottom:16px">
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;align-items:end">
@@ -2646,7 +2650,7 @@ footer{
   <div class="progress-chart-wrap">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
       <div class="progress-chart-title" style="margin-bottom:0">進度折線圖</div>
-      <select class="calc-select" id="prog-filter" onchange="renderProgressChart()" style="font-size:12px;padding:6px 10px">
+      <select class="calc-select" id="prog-filter" onchange="renderProgressChart()" style="font-size:20px;padding:6px 10px">
         <option>深蹲</option><option>硬舉</option><option>臥推</option><option>肩推</option>
         <option>引體向上</option><option>划船</option><option>羅馬尼亞硬舉</option><option>腿推</option>
       </select>
@@ -2670,7 +2674,7 @@ footer{
 <section class="section">
   <div class="section-label">週課表生成器</div>
   <div class="kc-title" style="margin-bottom:4px">根據你的目標與時間，自動生成個人化週課表</div>
-  <p style="font-size:12px;margin-bottom:20px">選好每週天數、目標和程度，就會生成課表建議。</p>
+  <p style="font-size:20px;margin-bottom:20px">選好每週天數、目標和程度，就會生成課表建議。</p>
 
   <div class="calc-card" style="margin-bottom:16px">
     <label class="calc-label" style="display:block;margin-bottom:8px">每週訓練天數</label>
@@ -2684,17 +2688,17 @@ footer{
 
     <label class="calc-label" style="display:block;margin:16px 0 8px">訓練目標</label>
     <div style="display:flex;gap:8px;flex-wrap:wrap" id="sched-goal-row">
-      <div class="sched-option selected" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'hypertrophy')"><div class="sched-option-num" style="font-size:16px"></div><div class="sched-option-label">肌肥大</div></div>
-      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'strength')"><div class="sched-option-num" style="font-size:16px"></div><div class="sched-option-label">增力</div></div>
-      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'fat')"><div class="sched-option-num" style="font-size:16px"></div><div class="sched-option-label">減脂</div></div>
-      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'perf')"><div class="sched-option-num" style="font-size:16px"></div><div class="sched-option-label">爆發力</div></div>
+      <div class="sched-option selected" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'hypertrophy')"><div class="sched-option-num" style="font-size:24px"></div><div class="sched-option-label">肌肥大</div></div>
+      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'strength')"><div class="sched-option-num" style="font-size:24px"></div><div class="sched-option-label">增力</div></div>
+      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'fat')"><div class="sched-option-num" style="font-size:24px"></div><div class="sched-option-label">減脂</div></div>
+      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedGoal(this,'perf')"><div class="sched-option-num" style="font-size:24px"></div><div class="sched-option-label">爆發力</div></div>
     </div>
 
     <label class="calc-label" style="display:block;margin:16px 0 8px">訓練程度</label>
     <div style="display:flex;gap:8px;flex-wrap:wrap" id="sched-level-row">
-      <div class="sched-option selected" style="flex:1;min-width:90px" onclick="selectSchedLevel(this,'beginner')"><div class="sched-option-label" style="font-size:13px;opacity:1">初學者</div><div class="sched-option-label">訓練 &lt;1 年</div></div>
-      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedLevel(this,'intermediate')"><div class="sched-option-label" style="font-size:13px;opacity:1">中級</div><div class="sched-option-label">1–3 年</div></div>
-      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedLevel(this,'advanced')"><div class="sched-option-label" style="font-size:13px;opacity:1">進階</div><div class="sched-option-label">3 年以上</div></div>
+      <div class="sched-option selected" style="flex:1;min-width:90px" onclick="selectSchedLevel(this,'beginner')"><div class="sched-option-label" style="font-size:21px;opacity:1">初學者</div><div class="sched-option-label">訓練 &lt;1 年</div></div>
+      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedLevel(this,'intermediate')"><div class="sched-option-label" style="font-size:21px;opacity:1">中級</div><div class="sched-option-label">1–3 年</div></div>
+      <div class="sched-option" style="flex:1;min-width:90px" onclick="selectSchedLevel(this,'advanced')"><div class="sched-option-label" style="font-size:21px;opacity:1">進階</div><div class="sched-option-label">3 年以上</div></div>
     </div>
 
     <button class="calc-btn" onclick="generateSchedule()" style="margin-top:16px;width:100%">生成週課表</button>
@@ -2714,7 +2718,7 @@ footer{
 <section class="section">
   <div class="section-label">熱量計算器</div>
   <div class="kc-title" style="margin-bottom:4px">計算你的每日總消耗熱量（TDEE）與三大營養素建議</div>
-  <p style="font-size:12px;margin-bottom:20px">使用 Mifflin-St Jeor 公式計算 BMR，再依活動量倍率估算 TDEE。</p>
+  <p style="font-size:20px;margin-bottom:20px">使用 Mifflin-St Jeor 公式計算 BMR，再依活動量倍率估算 TDEE。</p>
 
   <div class="calc-card">
     <div class="calc-row">
@@ -2769,7 +2773,7 @@ footer{
       </div>
     </div>
   </div>
-  <div class="kc-source" style="margin-top:12px;font-size:11px">
+  <div class="kc-source" style="margin-top:12px;font-size:19px">
     公式：Mifflin MD, St Jeor ST et al., 1990, <em>Am J Clin Nutr</em>, 51(2):241–247.
   </div>
 </section>
@@ -2950,7 +2954,7 @@ footer{
 
   <div id="videoGrid" class="video-grid"></div>
 
-  <div id="videoEmpty" style="display:none;padding:40px 0;font-size:13px">
+  <div id="videoEmpty" style="display:none;padding:40px 0;font-size:21px">
     這個分類還沒有影片。
   </div>
 
@@ -3225,14 +3229,14 @@ footer{
     <div class="kc-body">
       <div class="sci-badge"> 科學根據</div>
       <p class="article-prose">以下數字整合自 ISSN Position Stand（Jäger et al., 2017）、Morton 等人（2018）的大型薈萃分析，以及 Helms 等人（2014）針對天然健美選手的系統性回顧：</p>
-      <table class="protein-table">
+      <div class="table-scroll"><table class="protein-table">
         <tr><th>目標 / 族群</th><th>每公斤體重（g/kg）</th><th>70kg 舉例</th><th>備註</th></tr>
         <tr><td>一般人（無訓練）</td><td>0.8–1.2</td><td>56–84 g/天</td><td>WHO 最低建議值起點</td></tr>
         <tr><td>有訓練 · 維持</td><td>1.2–1.6</td><td>84–112 g/天</td><td>維持肌肉量的有效範圍</td></tr>
         <tr><td>肌肥大增肌期</td><td>1.6–2.2</td><td>112–154 g/天</td><td>平台點約 1.62 g/kg</td></tr>
         <tr><td>減脂期（保肌）</td><td>1.6–2.4</td><td>112–168 g/天</td><td>熱量赤字越大，需求越高；Helms 2014 的 2.3–3.1 g/kg 以去脂體重計</td></tr>
         <tr><td>70 歲以上長者</td><td>1.0–1.2</td><td>70–84 g/天</td><td>健康 1.0–1.2；生病 1.2–1.5，因合成阻抗需分散補充</td></tr>
-      </table>
+      </table></div>
       <p class="article-prose" style="margin-top:12px">
         Morton 等人（2018）收錄 49 項研究、1,863 名受試者的薈萃分析確認：<strong>蛋白質對增肌的平台點約在每日 1.62 g/kg（95% CI：1.03–2.20）</strong>。超過這個量，肌肉量不會再多多少。不過減脂期間熱量赤字會增加蛋白質的氧化消耗，需求可以拉高到 1.6–2.4 g/kg 體重（Helms 2014 建議的 2.3–3.1 g/kg 是以去脂體重計算）。
       </p>
@@ -3279,7 +3283,7 @@ footer{
       <p class="article-prose">
         蛋白質品質通常看兩個指標：<strong>DIAAS（消化必需胺基酸評分）</strong>，以及含有多少白胺酸（Leucine）。白胺酸是<strong>啟動 MPS 的關鍵訊號分子</strong>。一般建議每餐吃到約 <strong>2–3g</strong> 白胺酸，作為啟動合成路徑的實務門檻。
       </p>
-      <table class="protein-table">
+      <div class="table-scroll"><table class="protein-table">
         <tr><th>食物來源</th><th>蛋白質（每 100g）</th><th>白胺酸含量</th><th>DIAAS 評分</th></tr>
         <tr><td>乳清蛋白粉</td><td>~80g</td><td>高（~10%）</td><td>約 1.09（優）</td></tr>
         <tr><td>雞胸肉</td><td>~24g</td><td>高（~8%）</td><td>~1.00（優）</td></tr>
@@ -3287,7 +3291,7 @@ footer{
         <tr><td>鮭魚</td><td>~20g</td><td>高（~8%）</td><td>~1.00（優）</td></tr>
         <tr><td>板豆腐</td><td>~8g</td><td>中（~7%）</td><td>~0.84（良）</td></tr>
         <tr><td>糙米</td><td>~8g</td><td>低（~4%）</td><td>~0.59（需補充）</td></tr>
-      </table>
+      </table></div>
       <p class="article-prose" style="margin-top:12px">
         乳清的優勢是方便、吸收快、白胺酸濃度高，但雞蛋的 DIAAS 評分（約 1.13）其實略高於乳清（約 1.09）。<strong>結論：總量達標、來源多元就好，不一定要靠乳清補充品</strong>。它只是方便的工具，不是必需品。
       </p>
@@ -8539,7 +8543,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var paper = cssVar('--paper-card') || '#f7f5f1';
     function stat(id, txt) { var el = document.getElementById(id); if (el) el.textContent = txt; }
     if (records.length === 0) {
-      ctx.fillStyle = muted; ctx.font = '13px "Noto Sans TC",sans-serif'; ctx.textAlign = 'center';
+      ctx.fillStyle = muted; ctx.font = '21px "Noto Sans TC",sans-serif'; ctx.textAlign = 'center';
       ctx.fillText('尚無紀錄，先新增一筆', W / 2, H / 2);
       stat('stat-best', '—'); stat('stat-sessions', '—'); stat('stat-gain', '—');
       return;
@@ -8554,7 +8558,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ctx.fillText('至少需要兩筆紀錄才能畫折線', W / 2, H / 2);
       return;
     }
-    var pad = { top: 22, right: 18, bottom: 30, left: 42 };
+    var pad = { top: 24, right: 70, bottom: 46, left: 58 };
     var gW = W - pad.left - pad.right, gH = H - pad.top - pad.bottom;
     var range = (maxW - minW) || 10;
     var yMin = minW - range * 0.15, yMax = maxW + range * 0.15;
@@ -8564,7 +8568,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var gi = 0; gi <= 4; gi++) {
       var gy = pad.top + (gi / 4) * gH;
       ctx.beginPath(); ctx.moveTo(pad.left, gy); ctx.lineTo(W - pad.right, gy); ctx.stroke();
-      ctx.fillStyle = muted; ctx.font = '10px "DM Mono",monospace'; ctx.textAlign = 'right';
+      ctx.fillStyle = muted; ctx.font = '18px "DM Mono",monospace'; ctx.textAlign = 'right';
       ctx.fillText((yMax - (gi / 4) * (yMax - yMin)).toFixed(0), pad.left - 8, gy + 4);
     }
     ctx.fillStyle = muted; ctx.font = '10px "DM Mono",monospace'; ctx.textAlign = 'center';
